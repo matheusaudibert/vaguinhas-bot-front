@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaguinhas | Vagas de tecnologia no seu Discord</title>
+  <meta name="description"
+    content="Bot de Discord que distribui vagas de estágio, júnior, pleno e sênior direto nos canais do seu servidor." />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vaguinhas | Vagas de tecnologia no seu Discord" />
+  <meta property="og:description"
+    content="Bot de Discord que distribui vagas de estágio, júnior, pleno e sênior direto nos canais do seu servidor." />
+  <meta property="og:image" content="assets/logo.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Vaguinhas | Vagas de tecnologia no seu Discord" />
+  <meta name="twitter:description"
+    content="Bot de Discord que distribui vagas de estágio, júnior, pleno e sênior direto nos canais do seu servidor." />
+  <meta name="twitter:image" content="assets/logo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <img class="logo" src="assets/logo.jpg" alt="Logo do Vaguinhas" width="80" height="80" />
+
+      <h1>Vaguinhas</h1>
+      <p class="tagline">Vagas de tecnologia direto nos canais do seu servidor do Discord.</p>
+
+      <p class="lead">
+        O bot consome a <a href="https://github.com/matheusaudibert/api-vagas" target="_blank"
+          rel="noopener">api-vagas</a>, que agrega vagas de estágio, júnior, pleno e sênior, e posta cada vaga nova como
+        uma mensagem formatada, com nível, tecnologias, requisitos, salário, modelo de trabalho, local e botões para a
+        vaga e para a empresa.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1532881297809342494"
+          target="_blank" rel="noopener">Adicionar ao Discord</a>
+        <a class="btn btn-secondary" href="https://github.com/matheusaudibert/vaguinhas-bot" target="_blank"
+          rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Como funciona</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Adicione o bot</h3>
+              <p>Um clique em <strong>Adicionar ao Discord</strong> e o vaguinhas entra no seu servidor.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-number">2</span>
+            <div>
+              <h3>Escolha os canais</h3>
+              <p>
+                Use <code>/estagio</code>, <code>/junior</code>, <code>/pleno</code> ou <code>/senior</code> para
+                definir
+                qual canal recebe cada nível. Cada nível é independente: configure só os que interessam.
+              </p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-number">3</span>
+            <div>
+              <h3>Receba as vagas</h3>
+              <p>
+                O bot checa a API a cada 5 minutos, então a vaga chega no seu servidor poucos minutos depois de ser
+                publicada. Nada de ficar atualizando o LinkedIn.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Comandos</h2>
+        <p class="section-lead">
+          Os quatro comandos de nível funcionam como <strong>toggle</strong>: mandar o mesmo canal de novo remove a
+          configuração. Todas as respostas são efêmeras.
+        </p>
+
+        <ul class="commands">
+          <li class="command">
+            <code>/estagio &lt;canal&gt;</code>
+            <p>Define o canal que recebe as vagas de estágio</p>
+            <span class="perm">Gerenciar Servidor</span>
+          </li>
+          <li class="command">
+            <code>/junior &lt;canal&gt;</code>
+            <p>Define o canal que recebe as vagas de júnior</p>
+            <span class="perm">Gerenciar Servidor</span>
+          </li>
+          <li class="command">
+            <code>/pleno &lt;canal&gt;</code>
+            <p>Define o canal que recebe as vagas de pleno</p>
+            <span class="perm">Gerenciar Servidor</span>
+          </li>
+          <li class="command">
+            <code>/senior &lt;canal&gt;</code>
+            <p>Define o canal que recebe as vagas de sênior</p>
+            <span class="perm">Gerenciar Servidor</span>
+          </li>
+          <li class="command">
+            <code>/menu</code>
+            <p>Mostra quais canais estão configurados no servidor</p>
+            <span class="perm perm-none">Nenhuma</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <img class="banner" src="assets/banner.png" alt="Vagas de tecnologia todos os dias." width="1058" height="370" />
+
+      <nav class="footer-links">
+        <a href="https://github.com/matheusaudibert/vaguinhas-bot" target="_blank" rel="noopener">Bot</a>
+        <a href="https://github.com/matheusaudibert/api-vagas" target="_blank" rel="noopener">API</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1532881297809342494" target="_blank"
+          rel="noopener">Adicionar</a>
+      </nav>
+      <p>© Vaguinhas · feito por <a href="https://github.com/matheusaudibert" target="_blank"
+          rel="noopener">audibert</a></p>
+      <p class="disclaimer">Não afiliado ao Discord Inc.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
